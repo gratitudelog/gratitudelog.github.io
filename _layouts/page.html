@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Fancy Title</title>
-  </head>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
   <body>
-    <p>Here comes my fancy content: </p>
-    {{ content }}
+
+      {{ content }}
+
   </body>
+
 </html>
